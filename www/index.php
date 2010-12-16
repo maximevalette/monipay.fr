@@ -1,5 +1,8 @@
 <?php 
 
+$curl = false;
+if (preg_match("",$_SERVER['HTTP_USER_AGENT'])) $curl = true;
+
 class ipv6 
 { 
 
@@ -102,6 +105,8 @@ function compress_ipv6($ip ="")
 } 
 } 
 
+if (!$curl) {
+
 ?>
 
 <html>
@@ -145,3 +150,12 @@ if (ipv6::is_ipv6()) {
 ?>
 </body>
 </html>
+<?php
+
+} else {
+
+	echo $_SERVER["REMOTE_ADDR"].' / '.gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+
+}
+
+?>
