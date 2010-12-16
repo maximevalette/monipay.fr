@@ -1,7 +1,7 @@
 <?php 
 
 $curl = false;
-if (preg_match("",$_SERVER['HTTP_USER_AGENT'])) $curl = true;
+if (preg_match("/(curl|wget)/i",$_SERVER['HTTP_USER_AGENT'])) $curl = true;
 
 class ipv6 
 { 
