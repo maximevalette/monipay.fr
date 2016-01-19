@@ -1,0 +1,13 @@
+.ip {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.reverse {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    font-size: 30px;
+}
