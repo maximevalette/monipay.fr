@@ -1,0 +1,8 @@
+emails:
+  - maxime@maximevalette.com
+master:
+  release:
+    name: Monipay.fr
+    directory: production
+    url: http://www.monipay.fr
+    keep: 5
